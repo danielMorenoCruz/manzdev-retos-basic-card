@@ -1,0 +1,174 @@
+:root {
+  --main-bg-color: linear-gradient(to top right, #ff3867, #ffc873, #ff3867);
+  --main-wth: 377px;
+  --main-hht: 597px;
+  --hero-img: linear-gradient(
+      rgba(136, 76, 237, 0.55),
+      rgba(236, 28, 206, 0.55)
+    ),
+    url("./public/md-mahdi.jpg");
+  --border: #c722cd solid 3px;
+  --avatar: url("./public/alinedmooner.png"),
+    linear-gradient(rgb(136, 76, 237), rgb(236, 28, 206));
+  --blue: #2d7cbf;
+  --brown: #a05d5d;
+  --grey: #888;
+  --shadows: 0 0 10px var(--grey), 1px 0 21px 4px var(--grey) inset;
+}
+
+body {
+  background: var(--main-bg-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.basic-card {
+  background-color: white;
+  width: var(--main-wth);
+  height: var(--main-hht);
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: var(--shadows);
+}
+
+.icon {
+  width: 18px;
+  margin: 0;
+}
+
+.hero-image {
+  width: var(--main-wth);
+  border-radius: 8px 8px 0 0;
+  height: 11em;
+  background-image: var(--hero-img);
+  border-bottom: var(--border);
+  background-size: cover;
+}
+
+.avatar {
+  background-image: var(--avatar);
+  background-size: cover;
+  position: absolute;
+  border: var(--border);
+  width: 121px;
+  height: 121px;
+  border-radius: 50%;
+  margin-left: calc(var(--main-wth) / 3);
+  margin-top: calc(var(--main-hht) / 8);
+}
+
+.user {
+  font-family: Montserrat700;
+  letter-spacing: -1.89px;
+  margin: 0;
+  margin-top: 29px;
+}
+
+.location,
+.description {
+  margin: 0;
+}
+
+.button {
+  margin: 0px;
+  border-radius: 28px;
+  font-size: 13px;
+  height: 44px;
+  width: 111px;
+  font-family: Poppins500;
+  border: var(--blue) solid 2px;
+  color: var(--blue);
+  background-color: white;
+  margin: 29px;
+}
+
+.location {
+  font-family: Poppins100Italic;
+  letter-spacing: 0.21px;
+  font-size: 15px;
+  color: var(--brown);
+  margin: 0;
+}
+
+.description {
+  font-family: Poppins300;
+  color: var(--grey);
+  font-weight: 500;
+  margin-left: 34px;
+  margin-right: 34px;
+}
+
+.location {
+  margin-bottom: 29px;
+}
+
+.item {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 13px;
+  height: 56px;
+  font-family: Poppins;
+  font-size: 0.89em;
+  color: var(--grey);
+}
+
+.twitter-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: var(--grey) solid 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  border-left: var(--grey) solid 1px;
+  border-right: var(--grey) solid 1px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.left {
+  padding-right: 33px;
+}
+
+.right {
+  padding-left: 33px;
+}
+
+@font-face {
+  font-family: "Poppins500";
+  src: url(./public/poppins-500.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./public/poppins-regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat700";
+  src: url(./public/montserrat-700.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins100Italic";
+  src: url(./public/poppins-100-italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins300";
+  src: url(./public/poppins-300.woff2) format("woff2");
+}
+
+@media (max-width: var(--main-wth)) {
+}
+
+@media (max-height: var(--main-hht)) {
+}
+
+.number {
+  color: black;
+}

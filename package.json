@@ -1,0 +1,14 @@
+{
+  "name": "manzdev-retos-basic-card",
+  "version": "1.0.0",
+  "description": "Reto propuesto en lenguajejs.com",
+  "scripts": {
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Daniel M.C.",
+  "license": "ISC"
+}
